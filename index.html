@@ -28,18 +28,17 @@
 
     <button id="testButton">Test</button>
     <script>
+      var test = document.getElementById("testButton");
+      
        function onButtonClick() {
           alert('Button clicked!');
          console.log("test please work");
          test.style.backgroundColor="pink";
         }
-      
+
+      test.addEventListener("click", onButtonClick);
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
-
-      var test = document.getElementById("testButton");
-      test.addEventListener("click", onButtonClick);
-
     </script>
   
 </body>
