@@ -1,15 +1,14 @@
-<html>
-   <body>
-      <head>
-         <title>HTML Forms</title>
-      </head>
-      <p>Add your details:</p>
-      <form>
-         Student Name:<br> <input type="text" name="name">
-         <br>
-         Student Subject:<br> <input type="text" name="subject">
-         <br>
-         Rank:<br> <input type="text" name="rank">
-      </form>
-   </body>
-</html>
+<div class='wrapper'>
+<form id='nameForm'>
+<div class='form-uname'>
+    <label id='nameLable' for='nameField'>Create a username:</label>
+    <input id='nameField' type='text' maxlength='25'></input>
+</div>
+<div class='form-sub'>
+    <button id='subButton' type='button'>Print your name!</button>
+</div>
+</form>
+
+<div>
+    <p id='result'></p></div>
+</div>
