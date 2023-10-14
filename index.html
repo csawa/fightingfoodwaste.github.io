@@ -105,8 +105,8 @@ maybe{}
 <h2> Section 4: Food Disposal</h2>
   
   <h3> Does your state, tribal, community or local government provide composting services? </h3>
-    <button> Yes. </button>
-    <button> No. </button>
+    <button class="yes"> Yes. </button>
+    <button class="no"> No. </button>
     <!-- if they say no give them resources to create composting campaigns/advocacy -->
     
   <h3> A product from the grocery store has gone bad and cannot be repurposed. What do you do?</h3>
@@ -119,14 +119,6 @@ maybe{}
     <script>
       var test = document.getElementById("testButton");
 
-      const yesAnswer = document.getElementsByClassName("yes");
-      console.log(yesAnswer);
-
-      const noAnswer = document.getElementsByClassName("no");
-      console.log(noAnswer);
-      const maybeAnswer = document.getElementsByClassName("maybe");
-      console.log(maybeAnswer);
-
        function onButtonClick() {
           alert('Button clicked!');
          console.log("test please work");
@@ -134,7 +126,17 @@ maybe{}
         }
 
       test.addEventListener("click", onButtonClick);
-      
+
+      const yesAnswer = document.getElementsByClassName("yes");
+      console.log(yesAnswer);
+      const noAnswer = document.getElementsByClassName("no");
+      console.log(noAnswer);
+      const maybeAnswer = document.getElementsByClassName("maybe");
+      console.log(maybeAnswer);
+
+      for (var i = 0; i < yesAnswer.length();i++){
+        yesAnswer[0].style.backgroundColor="pink";
+      }
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
     </script>
