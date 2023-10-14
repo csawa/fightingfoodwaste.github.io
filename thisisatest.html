@@ -1,30 +1,14 @@
-<html>
-<body>
-<div class='wrapper'>
-<form id='nameForm'>
-<div class='form-uname'>
-    <label id='nameLable' for='nameField'>Create a username:</label>
-    <input id='nameField' type='text' maxlength='25'></input>
-</div>
-<div class='form-sub'>
-    <button id='subButton' type='button'>Print your name!</button>
-</div>
-</form>
+<html>    
+    <input type="text" placeholder ="username" id="userinput">
+    <br>
+    <input type="password" placeholder="password">
+    <br>
+    <button type="submit" onclick="myfunc()" id="demo">click me</button>
 
-<div>
-    <p id='result'></p></div>
-</div>
-<script>function getUserName() {
-var nameField = document.getElementById('nameField').value;
-var result = document.getElementById('result');
-
-if (nameField.length < 3) {
-    result.textContent = 'Username must contain at least 3 characters';
-    alert('Username must contain at least 3 characters');
-} else {
-    result.textContent = 'Your username is: ' + nameField;
-    alert(nameField);
-}
-}</script>
-</body>
+    <script type="text/javascript">
+        function myfunc() {
+            var input = document.getElementById('userinput');
+            alert(input.value);
+        } 
+    </script>
 </html>
