@@ -26,8 +26,16 @@
     <button> Throw it in the compost. </button>
     <button> Use a personal/community composting service. </button>
 
-    <button>Test</button>
-    <script src="script.js"></script>
+    <button id="testButton">Test</button>
+    <script>
+        function onButtonClick() {
+          alert('Button clicked!');
+        }
+      
+      const button = document.querySelector('button');
+      button.addEventListener('click', onButtonClick);
+
+    </script>
   
 </body>
 </html>
