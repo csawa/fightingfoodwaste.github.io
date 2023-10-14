@@ -23,7 +23,7 @@ maybe{}
 <h2> Section 1: Planning and Shopping</h2>
   <h3> I make a grocery list before buying groceries and stick to my grocery list    </h3>
       <button class="yes"> Yes </button>
-      <button class="no"> No </button>
+      <button id="no"> No </button>
       <button class="maybe"> Maybe </button>
 
   <!-- if they say no give them resources about shopping -->
@@ -85,6 +85,8 @@ maybe{}
     <script>
       var test = document.getElementById("testButton");
 
+      var test2 = document.getElementById("no");
+
       const yesAnswer = document.getElementsByClassName("yes");
       console.log(yesAnswer);
 
@@ -95,6 +97,7 @@ maybe{}
         }
 
       test.addEventListener("click", onButtonClick);
+      test2.addEventListener("click", onButtonClick);
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
     </script>
