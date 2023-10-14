@@ -1,14 +1,11 @@
 <html>    
-    <input type="text" placeholder ="username" id="userinput">
-    <br>
-    <input type="password" placeholder="password">
-    <br>
-    <button type="submit" onclick="myfunc()" id="demo">click me</button>
+    <form id="form" onsubmit="return false;">
+    <input type="text" id="userInput" />
+    <input type="submit" onclick="othername();" />
+    </form>
 
-    <script type="text/javascript">
-        function myfunc() {
-            var input = document.getElementById('userinput');
-            alert(input.value);
-        } 
-    </script>
+<script>function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}</script>
 </html>
