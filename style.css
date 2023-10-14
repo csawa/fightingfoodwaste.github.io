@@ -1,3 +1,7 @@
+
+div#page-wrapper {
+background-color: #3D85C6;
+}
 body {
     display: flex;
     align-items: center;
