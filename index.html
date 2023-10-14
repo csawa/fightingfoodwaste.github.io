@@ -10,7 +10,11 @@ border: none;
 background: #9FC5E8;
 padding: 0px;
 font-family: 'Comfortaa', cursive;
-}</style>
+}
+yes{}
+no{}
+maybe{}
+</style>
 </head>
 <body>
 <center><h1> Food Waste Quiz</h1>
@@ -18,9 +22,10 @@ font-family: 'Comfortaa', cursive;
 
 <h2> Section 1: Planning and Shopping</h2>
   <h3> I make a grocery list before buying groceries and stick to my grocery list  
-      <button id="yes"> Yes </button>
-      <button id="no"> No </button>
-      <button id="maybe"> Maybe </button>
+      <button class="yes"> Yes </button>
+      <button class="no"> No </button>
+      <button class="maybe"> Maybe </button>
+
   <!-- if they say no give them resources about shopping -->
   <h3> I buy food that I didn't realize I already had 
    <!-- do a range like strongly disagree to strongly agree perhaps??? or is this too hard? maybe then just yes no sometimes --> 
@@ -79,7 +84,10 @@ font-family: 'Comfortaa', cursive;
     <button id="testButton">Test</button>
     <script>
       var test = document.getElementById("testButton");
-      
+
+      const yesAnswer = document.getElementsByClassName("yes");
+      console.log(yesAnswer);
+
        function onButtonClick() {
           alert('Button clicked!');
          console.log("test please work");
