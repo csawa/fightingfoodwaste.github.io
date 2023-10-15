@@ -118,28 +118,46 @@
          console.log("test please work");
          test.style.backgroundColor="pink";
         }
-
-      function onButtonClick2() {
-          alert('Button clicked!');
-         console.log("test please work for yes button");
-         test.style.backgroundColor="green";
-        }
   
-      var yesAnswer;
-      var noAnswer;
-      var maybeAnswer;
-      for (var i = 1; i <=6; i++){
-        yesAnswer =  document.getElementById("yes" + i);
-        yesAnswer.addEventListener("click", onButtonClick2);
-        noAnswer =  document.getElementById("no" + i);
-        maybeAnswer =  document.getElementById("maybe" + i);
-      }
+      var yesAnswer1 = document.getElementById("yes1");
+      var noAnswer1 =  document.getElementById("no1");
+      var maybeAnswer1 =  document.getElementById("maybe1");
+      yesAnswer1.addEventListener("click", onButtonClick);
+      noAnswer1.addEventListener("click", onButtonClick);
+      maybeAnswer1.addEventListener("click", onButtonClick);
+
+
+      var yesAnswer2 = document.getElementById("yes2");
+      var noAnswer2 =  document.getElementById("no2");
+      var maybeAnswer2 =  document.getElementById("maybe2");
+
+      var yesAnswer2 = document.getElementById("yes2");
+      var noAnswer2 =  document.getElementById("no2");
+      var maybeAnswer2 =  document.getElementById("maybe2");
+
+      var yesAnswer3 = document.getElementById("yes3");
+      var noAnswer3 =  document.getElementById("no3");
+      var maybeAnswer3 =  document.getElementById("maybe3");
+
+      var yesAnswer4 = document.getElementById("yes4");
+      var noAnswer4 =  document.getElementById("no4");
+      var maybeAnswer4 =  document.getElementById("maybe4");
+
+      var yesAnswer5 = document.getElementById("yes5");
+      var noAnswer5 =  document.getElementById("no5");
+      var maybeAnswer5=  document.getElementById("maybe5");
       
       var test = document.getElementById("testButton");
       test.addEventListener("click", onButtonClick);
 
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
+      /*for (var i = 1; i <=6; i++){
+        yesAnswer =  ;
+        yesAnswer.addEventListener("click", onButtonClick2);
+        noAnswer =  document.getElementById("no" + i);
+        maybeAnswer =  document.getElementById("maybe" + i);
+      }*/
     </script>
   
 </body>
