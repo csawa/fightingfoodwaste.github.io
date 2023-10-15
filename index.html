@@ -14,9 +14,9 @@
 
 <h2> Section 1: Planning and Shopping</h2>
   <h3> I make a grocery list before buying groceries and stick to my grocery list    </h3>
-      <button id="yes1"> Yes </button>
-      <button id="no1"> No </button>
-      <button id="maybe1"> Maybe </button>
+      <button id="yes1" value="yes"> Yes </button>
+      <button id="no1" value="no"> No </button>
+      <button id="maybe1" value="maybe"> Maybe </button>
 
   <!-- if they say no give them resources about shopping -->
   <h3> I buy food that I didn't realize I already had </h3>
@@ -140,6 +140,7 @@
 
          if (questionCounter == 1){
            console.log("clicked no on question 1");
+           console.log(this.value);
          } else if (questionCounter == 3){
            //Display data visualization
            console.log("clicked no on question 3");
