@@ -169,18 +169,21 @@
         
         if (this.id == "yes1"){
           wasteTracker += 0;
+          console.log(wasteTracker);
         } else if (this.id == "no1"){
           wasteTracker += 1;
+          console.log(wasteTracker);
         } else if(this.id == "maybe1"){
           wasteTracker += 0.5;
+          console.log(wasteTracker);
         }
       }
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
       yesAnswer1.addEventListener("click", onQ1ButtonClick);
-      noAnswer1.addEventListener("click", onButtonClickNo);
-      maybeAnswer1.addEventListener("click", onButtonClickMaybe);
+      noAnswer1.addEventListener("click", onQ1ButtonClick);
+      maybeAnswer1.addEventListener("click", onQ1ButtonClick);
 
 
       var yesAnswer2 = document.getElementById("yes2");
