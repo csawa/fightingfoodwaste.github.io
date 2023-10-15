@@ -118,37 +118,53 @@
          console.log("test please work");
          answerId.style.backgroundColor="pink";
         }
-  
+
+      var test = document.getElementById("testButton");
+      test.addEventListener("click", onButtonClick);
+      
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
       yesAnswer1.addEventListener("click", onButtonClick(yesAnswer1));
-      noAnswer1.addEventListener("click", onButtonClick);
-      maybeAnswer1.addEventListener("click", onButtonClick);
+      noAnswer1.addEventListener("click", onButtonClick(noAnswer1));
+      maybeAnswer1.addEventListener("click", onButtonClick(maybeAnswer1));
 
 
       var yesAnswer2 = document.getElementById("yes2");
       var noAnswer2 =  document.getElementById("no2");
       var maybeAnswer2 =  document.getElementById("maybe2");
-
-      var yesAnswer2 = document.getElementById("yes2");
-      var noAnswer2 =  document.getElementById("no2");
-      var maybeAnswer2 =  document.getElementById("maybe2");
+      yesAnswer2.addEventListener("click", onButtonClick(yesAnswer2));
+      noAnswer2.addEventListener("click", onButtonClick(noAnswer2));
+      maybeAnswer2.addEventListener("click", onButtonClick(maybeAnswer2));
 
       var yesAnswer3 = document.getElementById("yes3");
       var noAnswer3 =  document.getElementById("no3");
       var maybeAnswer3 =  document.getElementById("maybe3");
+      yesAnswer3.addEventListener("click", onButtonClick(yesAnswer3));
+      noAnswer3.addEventListener("click", onButtonClick(noAnswer3));
+      maybeAnswer3.addEventListener("click", onButtonClick(maybeAnswer3));
 
       var yesAnswer4 = document.getElementById("yes4");
       var noAnswer4 =  document.getElementById("no4");
       var maybeAnswer4 =  document.getElementById("maybe4");
+      yesAnswer4.addEventListener("click", onButtonClick(yesAnswer4));
+      noAnswer4.addEventListener("click", onButtonClick(noAnswer4));
+      maybeAnswer4.addEventListener("click", onButtonClick(maybeAnswer4));
 
       var yesAnswer5 = document.getElementById("yes5");
       var noAnswer5 =  document.getElementById("no5");
-      var maybeAnswer5=  document.getElementById("maybe5");
+      var maybeAnswer5 =  document.getElementById("maybe5");
+      yesAnswer5.addEventListener("click", onButtonClick(yesAnswer5));
+      noAnswer5.addEventListener("click", onButtonClick(noAnswer5));
+      maybeAnswer5.addEventListener("click", onButtonClick(maybeAnswer5));
+
+      var yesAnswer6 = document.getElementById("yes6");
+      var noAnswer6 =  document.getElementById("no6");
+      var maybeAnswer6=  document.getElementById("maybe6");
+      yesAnswer6.addEventListener("click", onButtonClick(yesAnswer6));
+      noAnswer6.addEventListener("click", onButtonClick(noAnswer6));
+      maybeAnswer6.addEventListener("click", onButtonClick(maybeAnswer6));      
       
-      var test = document.getElementById("testButton");
-      test.addEventListener("click", onButtonClick);
 
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
