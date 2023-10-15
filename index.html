@@ -119,11 +119,18 @@
          test.style.backgroundColor="pink";
         }
 
+      function onButtonClick2() {
+          alert('Button clicked!');
+         console.log("test please work for yes button");
+         test.style.backgroundColor="green";
+        }
+  
       var yesAnswer;
       var noAnswer;
       var maybeAnswer;
       for (var i = 1; i <=6; i++){
         yesAnswer =  document.getElementById("yes" + i);
+        yesAnswer.addEventListener("click", onButtonClick2);
         noAnswer =  document.getElementById("no" + i);
         maybeAnswer =  document.getElementById("maybe" + i);
       }
