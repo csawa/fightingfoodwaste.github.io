@@ -160,11 +160,23 @@
          this.style.backgroundColor="green";
          this.style.opacity=0.6;
        }
-      
+
+      function onQ1ButtonClick() {
+        console.log(this.id);
+        /*if (this.id == "yes1"){
+          noAnswer.disabled
+        } else if (this.id == "no1"){
+          wasteTracker += 0;
+          yesAnswer.disabled = true; 
+          maybeAnswer.disabled = true;
+        } else if(this.id == "maybe1"){
+          
+        }*/
+      }
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
-      yesAnswer1.addEventListener("click", onButtonClickYes);
+      yesAnswer1.addEventListener("click", onQ1ButtonClick);
       noAnswer1.addEventListener("click", onButtonClickNo);
       maybeAnswer1.addEventListener("click", onButtonClickMaybe);
 
