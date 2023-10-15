@@ -114,7 +114,7 @@
     <button id="testButton">Test</button>
     <script>
        function onButtonClick() {
-          alert('Button clicked!'+ answerId);
+          alert('Button clicked!');
          console.log("test please work");
          this.style.backgroundColor="pink"
          //answerId.style.backgroundColor="blue";
@@ -129,8 +129,8 @@
       yesAnswer1.addEventListener("click", function(){
         this.style.backgroundColor="green";
       });
-      //noAnswer1.addEventListener("click", onButtonClick);
-      //maybeAnswer1.addEventListener("click", onButtonClick(maybeAnswer1));
+      noAnswer1.addEventListener("click", onButtonClick);
+      maybeAnswer1.addEventListener("click", onButtonClick);
 
 
       /*ar yesAnswer2 = document.getElementById("yes2");
