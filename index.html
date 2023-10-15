@@ -113,14 +113,15 @@
 
     <button id="testButton">Test</button>
     <script>
-       function onButtonClick(answerId) {
+       function onButtonClick() {
           alert('Button clicked!'+ answerId);
          console.log("test please work");
-         answerId.style.backgroundColor="blue";
+         this.style.backgroundColor="pink"
+         //answerId.style.backgroundColor="blue";
         }
 
       var test = document.getElementById("testButton");
-      test.addEventListener("click", onButtonClick(test));
+      test.addEventListener("click", onButtonClick);
       
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
