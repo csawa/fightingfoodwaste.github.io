@@ -102,10 +102,14 @@
     <!-- if they say no give them resources to create composting campaigns/advocacy -->
     
   <h3> A product from the grocery store has gone bad and cannot be repurposed. What do you do?</h3>
-    <button> Throw it in the trash. </button>
-    <button> Throw it in the recycle. </button>
-    <button> Throw it in the compost. </button>
-    <button> Use a personal/community composting service. </button>
+    <input type="radio" id="trash" name="product" value="trash">
+    <label for="trash">Throw it in the trash.</label><br>
+    <input type="radio" id="r" name="product" value="r">
+    <label for="r">Throw it in the recycle.</label><br>
+    <input type="radio" id="com" name="product" value="com">
+    <label for="com">Throw it in the compost.</label><br>
+    <input type="radio" id="personal" name="product" value="personal">
+    <label for="personal">Use a personal/community composting service.</label><br>
 
     <button id="testButton">Test</button>
     <script>
