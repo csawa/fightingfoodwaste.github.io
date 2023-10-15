@@ -163,15 +163,17 @@
 
       function onQ1ButtonClick() {
         console.log(this.id);
-        /*if (this.id == "yes1"){
-          noAnswer.disabled
-        } else if (this.id == "no1"){
+        yesAnswer1.disabled = true;
+        noAnswer1.disabled = true;
+        maybeAnswer1.disabled = true;
+        
+        if (this.id == "yes1"){
           wasteTracker += 0;
-          yesAnswer.disabled = true; 
-          maybeAnswer.disabled = true;
+        } else if (this.id == "no1"){
+          wasteTracker += 1;
         } else if(this.id == "maybe1"){
-          
-        }*/
+          wasteTracker += 0.5;
+        }
       }
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
