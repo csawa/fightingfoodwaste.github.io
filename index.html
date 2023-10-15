@@ -87,9 +87,15 @@
   <!-- yes no maybe-->
 <h2> Section 3: Cooking and Preparing Food</h2>
   <h3> I know the difference between best if used by, sell by, and use by dates.</h3>
-  buttons needed here
+    <button id="yes6"> Yes </button>
+    <button id="no6"> No </button>
+    <button id="maybe6"> Maybe </button>
+  
   <h3> I usually cook too much to eat.</h3>
-  buttons needed here
+    <button id="yes7"> Yes </button>
+    <button id="no7"> No </button>
+    <button id="maybe7"> Maybe </button>
+  
   <h3> When a product is past its prime use date I...</h3>
     <input type="radio" id="use" name="storage_four" value="use">
     <label for="use">Try to see if I can use it in another way if it smells/looks fine.</label><br>
@@ -98,8 +104,8 @@
 <h2> Section 4: Food Disposal</h2>
   
   <h3> Does your state, tribal, community or local government provide composting services? </h3>
-    <button id="yes6"> Yes. </button>
-    <button id="no6"> No. </button>
+    <button id="yes8"> Yes. </button>
+    <button id="no8"> No. </button>
     <!-- if they say no give them resources to create composting campaigns/advocacy -->
     
   <h3> A product from the grocery store has gone bad and cannot be repurposed. What do you do?</h3>
@@ -234,8 +240,52 @@
           wasteTracker += 1;
           yesAnswer6.disabled = true;
           maybeAnswer6.disabled = true;
+        } else if(this.id == "maybe6"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer6.disabled = true;
+          noAnswer6.disabled = true;
+        }
+      }
+
+      function onQ7ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes7"){
+          wasteTracker += 0;
+          noAnswer7.disabled = true;
+          maybeAnswer7.disabled = true;
+        } else if (this.id == "no7"){
+          wasteTracker += 1;
+          yesAnswer7.disabled = true;
+          maybeAnswer7.disabled = true;
+        } else if(this.id == "maybe7"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer7.disabled = true;
+          noAnswer7.disabled = true;
+        }
+      }
+
+      function onQ8ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes8"){
+          wasteTracker += 0;
+          noAnswer8.disabled = true;
+          maybeAnswer8.disabled = true;
+        } else if (this.id == "no8"){
+          wasteTracker += 1;
+          yesAnswer8.disabled = true;
+          maybeAnswer8.disabled = true;
         } 
       }
+
+      
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
@@ -271,11 +321,30 @@
       yesAnswer5.addEventListener("click", onQ5ButtonClick);
       noAnswer5.addEventListener("click", onQ5ButtonClick);
       maybeAnswer5.addEventListener("click", onQ5ButtonClick);
-    
+
       var yesAnswer6 = document.getElementById("yes6");
       var noAnswer6 =  document.getElementById("no6");
+      var maybeAnswer6 =  document.getElementById("maybe6");
       yesAnswer6.addEventListener("click", onQ6ButtonClick);
       noAnswer6.addEventListener("click", onQ6ButtonClick);
+      maybeAnswer6.addEventListener("click", onQ6ButtonClick);
+      
+      var yesAnswer7 = document.getElementById("yes7");
+      var noAnswer7 =  document.getElementById("no7");
+      var maybeAnswer7 =  document.getElementById("maybe7");
+      yesAnswer7.addEventListener("click", onQ7ButtonClick);
+      noAnswer7.addEventListener("click", onQ7ButtonClick);
+      maybeAnswer7.addEventListener("click", onQ7ButtonClick);
+    
+      var yesAnswer8 = document.getElementById("yes8");
+      var noAnswer8 =  document.getElementById("no8");
+      yesAnswer8.addEventListener("click", onQ8ButtonClick);
+      noAnswer8.addEventListener("click", onQ8ButtonClick);
+
+      /*const para = document.createElement("p");
+      if (wasteTracker >= 3){
+        const node = document.createTextNode("Your waste level is high");
+      } else if (wasteTracker */
 
     </script>
   
