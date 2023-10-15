@@ -115,7 +115,7 @@
       var wasteTracker = 0;
       var questionCounter = 0;
       
-      function onButtonClickYes() {
+      /*function onButtonClickYes() {
          console.log("clicked yes");
          wasteTracker += 1;
          questionCounter +=1;
@@ -159,23 +159,26 @@
          questionCounter += 1;
          this.style.backgroundColor="green";
          this.style.opacity=0.6;
-       }
+       }*/
 
       function onQ1ButtonClick() {
         console.log(this.id);
-        yesAnswer1.disabled = true;
-        noAnswer1.disabled = true;
-        maybeAnswer1.disabled = true;
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
         
         if (this.id == "yes1"){
           wasteTracker += 0;
-          console.log(wasteTracker);
+          noAnswer1.disabled = true;
+          maybeAnswer1.disabled = true;
         } else if (this.id == "no1"){
           wasteTracker += 1;
-          console.log(wasteTracker);
+          yesAnswer1.disabled = true;
+          maybeAnswer1.disabled = true;
         } else if(this.id == "maybe1"){
           wasteTracker += 0.5;
           console.log(wasteTracker);
+          yesAnswer1.disabled = true;
+          noAnswer1.disabled = true;
         }
       }
       var yesAnswer1 = document.getElementById("yes1");
