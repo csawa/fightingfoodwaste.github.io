@@ -128,14 +128,15 @@ maybe{}
       test.addEventListener("click", onButtonClick);
 
       const yesAnswer = document.getElementsByClassName("yes");
-      console.log(yesAnswer);
+      //console.log(yesAnswer);
       const noAnswer = document.getElementsByClassName("no");
       console.log(noAnswer);
       const maybeAnswer = document.getElementsByClassName("maybe");
       console.log(maybeAnswer);
 
       for (var i = 0; i < 5;i++){
-        yesAnswer[0].addEventListener("click", onButtonClick());
+        console.log(yesAnswer[i]);
+        //yesAnswer[0].addEventListener("click", onButtonClick());
       }
        /*const button = document.querySelector('button');
       button.addEventListener('click', onButtonClick);*/
