@@ -111,31 +111,47 @@
     <input type="radio" id="personal" name="product" value="personal">
     <label for="personal">Use a personal/community composting service.</label><br>
 
-    <button id="testButton">Test</button>
     <script>
-       function onButtonClickYes() {
-          alert('Button clicked!');
-         console.log("test please work");
+      var wasteTracker = 0;
+      var questionCounter = 0;
+      
+      function onButtonClickYes() {
+         console.log("clicked yes");
+         wasteTracker += 1;
+         questionCounter +=1;
          this.style.backgroundColor="green";
          this.style.opacity=0.6;
+
+        if (questionCounter ==2){
+          //Display some sort of text / stats
+       } else if (questionCounter == 5){
+          //Display some sort of text
        }
 
       function onButtonClickNo() {
-          alert('Button clicked!');
          console.log("clicked no");
+         wasteTracker += 0;
+         questionCounter += 1;
          this.style.backgroundColor="green";
          this.style.opacity=0.6;
+
+         if (questionCounter == 1){
+         } else if (questionCounter == 3){
+           //Display data visualization
+         } else if (questionCounter == 4){
+           //Display data visulatiation
+         } else if (questionCounter == 6){
+           //Display data visualization
+         }
        }
 
       function onButtonClickMaybe() {
-          alert('Button clicked!');
          console.log("clicked maybe");
+         wasteTracker += 0.5;
+         questionCounter += 1;
          this.style.backgroundColor="green";
          this.style.opacity=0.6;
        }
-
-      var test = document.getElementById("testButton");
-      test.addEventListener("click", onButtonClickYes);
       
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
@@ -171,13 +187,15 @@
       var maybeAnswer5 =  document.getElementById("maybe5");
       yesAnswer5.addEventListener("click", onButtonClickYes);
       noAnswer5.addEventListener("click", onButtonClickNo);
+      maybeAnswer5.addEventListener("click", onButtonClickMaybe);
     
       var yesAnswer6 = document.getElementById("yes6");
       var noAnswer6 =  document.getElementById("no6");
       var maybeAnswer6=  document.getElementById("maybe6");
       yesAnswer6.addEventListener("click", onButtonClickYes);
       noAnswer6.addEventListener("click", onButtonClickNo);
-        
+
+      if (wasteTracker 
     </script>
   
 </body>
