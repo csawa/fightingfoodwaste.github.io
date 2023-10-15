@@ -115,52 +115,6 @@
     <script>
       var wasteTracker = 0;
       var questionCounter = 0;
-      
-      /*function onButtonClickYes() {
-         console.log("clicked yes");
-         wasteTracker += 1;
-         questionCounter +=1;
-         this.style.backgroundColor="green";
-         this.style.opacity=0.6;
-
-        if (questionCounter ==2){
-          //Display some sort of text / stats
-          console.log("clicked yes on question 2");
-       } else if (questionCounter == 5){
-          //Display some sort of text
-          console.log("clicked yes on question 5");
-         }
-       }
-
-      function onButtonClickNo() {
-         console.log("clicked no");
-         wasteTracker += 0;
-         questionCounter += 1;
-         this.style.backgroundColor="green";
-         this.style.opacity=0.6;
-
-         if (questionCounter == 1){
-           console.log("clicked no on question 1");
-           console.log(this.value);
-         } else if (questionCounter == 3){
-           //Display data visualization
-           console.log("clicked no on question 3");
-         } else if (questionCounter == 4){
-           //Display data visulatiation
-           console.log("clicked no on question 4");
-         } else if (questionCounter == 6){
-           //Display data visualization
-           console.log("clicked no on question 6");
-         }
-       }
-
-      function onButtonClickMaybe() {
-         console.log("clicked maybe");
-         wasteTracker += 0.5;
-         questionCounter += 1;
-         this.style.backgroundColor="green";
-         this.style.opacity=0.6;
-       }*/
 
       function onQ1ButtonClick() {
         console.log(this.id);
@@ -180,6 +134,111 @@
           console.log(wasteTracker);
           yesAnswer1.disabled = true;
           noAnswer1.disabled = true;
+        }
+      }
+
+      function onQ2ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes2"){
+          wasteTracker += 0;
+          noAnswer2.disabled = true;
+          maybeAnswer2.disabled = true;
+        } else if (this.id == "no2"){
+          wasteTracker += 1;
+          yesAnswer2.disabled = true;
+          maybeAnswer2.disabled = true;
+        } else if(this.id == "maybe2"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer2.disabled = true;
+          noAnswer2.disabled = true;
+        }
+      }
+
+      function onQ2ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes3"){
+          wasteTracker += 0;
+          noAnswer3.disabled = true;
+          maybeAnswer3.disabled = true;
+        } else if (this.id == "no3"){
+          wasteTracker += 1;
+          yesAnswer3.disabled = true;
+          maybeAnswer3.disabled = true;
+        } else if(this.id == "maybe3"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer3.disabled = true;
+          noAnswer3.disabled = true;
+        }
+      }
+
+      function onQ2ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes4"){
+          wasteTracker += 0;
+          noAnswer4.disabled = true;
+          maybeAnswer4.disabled = true;
+        } else if (this.id == "no4"){
+          wasteTracker += 1;
+          yesAnswer4.disabled = true;
+          maybeAnswer4.disabled = true;
+        } else if(this.id == "maybe4"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer4.disabled = true;
+          noAnswer4.disabled = true;
+        }
+      }
+
+      function onQ2ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes5"){
+          wasteTracker += 0;
+          noAnswer5.disabled = true;
+          maybeAnswer5.disabled = true;
+        } else if (this.id == "no5"){
+          wasteTracker += 1;
+          yesAnswer5.disabled = true;
+          maybeAnswer5.disabled = true;
+        } else if(this.id == "maybe5"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer5.disabled = true;
+          noAnswer5.disabled = true;
+        }
+      }
+
+      function onQ2ButtonClick() {
+        console.log(this.id);
+        this.style.backgroundColor="green";
+        this.style.opacity=0.6;
+        
+        if (this.id == "yes6"){
+          wasteTracker += 0;
+          noAnswer6.disabled = true;
+          maybeAnswer6.disabled = true;
+        } else if (this.id == "no6"){
+          wasteTracker += 1;
+          yesAnswer6.disabled = true;
+          maybeAnswer6.disabled = true;
+        } else if(this.id == "maybe6"){
+          wasteTracker += 0.5;
+          console.log(wasteTracker);
+          yesAnswer6.disabled = true;
+          noAnswer6.disabled = true;
         }
       }
       var yesAnswer1 = document.getElementById("yes1");
