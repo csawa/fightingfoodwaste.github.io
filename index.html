@@ -116,18 +116,18 @@
        function onButtonClick(answerId) {
           alert('Button clicked!'+ answerId);
          console.log("test please work");
-         answerId.style.backgroundColor="pink";
+         answerId.style.backgroundColor="blue";
         }
 
       var test = document.getElementById("testButton");
-      test.addEventListener("click", onButtonClick);
+      test.addEventListener("click", onButtonClick(test));
       
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
-      yesAnswer1.addEventListener("click", onButtonClick(test));
-      noAnswer1.addEventListener("click", onButtonClick);
-      maybeAnswer1.addEventListener("click", onButtonClick(maybeAnswer1));
+      yesAnswer1.addEventListener("click", onButtonClick(yesAnswer1));
+      //noAnswer1.addEventListener("click", onButtonClick);
+      //maybeAnswer1.addEventListener("click", onButtonClick(maybeAnswer1));
 
 
       /*ar yesAnswer2 = document.getElementById("yes2");
