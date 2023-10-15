@@ -234,12 +234,7 @@
           wasteTracker += 1;
           yesAnswer6.disabled = true;
           maybeAnswer6.disabled = true;
-        } else if(this.id == "maybe6"){
-          wasteTracker += 0.5;
-          console.log(wasteTracker);
-          yesAnswer6.disabled = true;
-          noAnswer6.disabled = true;
-        }
+        } 
       }
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
@@ -252,36 +247,35 @@
       var yesAnswer2 = document.getElementById("yes2");
       var noAnswer2 =  document.getElementById("no2");
       var maybeAnswer2 =  document.getElementById("maybe2");
-      yesAnswer2.addEventListener("click", onButtonClickYes);
-      noAnswer2.addEventListener("click", onButtonClickNo);
-      maybeAnswer2.addEventListener("click", onButtonClickMaybe);
+      yesAnswer2.addEventListener("click", onQ2ButtonClick);
+      noAnswer2.addEventListener("click", onQ2ButtonClick);
+      maybeAnswer2.addEventListener("click", onQ2ButtonClick);
 
       var yesAnswer3 = document.getElementById("yes3");
       var noAnswer3 =  document.getElementById("no3");
       var maybeAnswer3 =  document.getElementById("maybe3");
-      yesAnswer3.addEventListener("click", onButtonClickYes);
-      noAnswer3.addEventListener("click", onButtonClickNo);
-      maybeAnswer3.addEventListener("click", onButtonClickMaybe);
+      yesAnswer3.addEventListener("click", onQ3ButtonClick);
+      noAnswer3.addEventListener("click", onQ3ButtonClick);
+      maybeAnswer3.addEventListener("click", onQ3ButtonClick);
 
       var yesAnswer4 = document.getElementById("yes4");
       var noAnswer4 =  document.getElementById("no4");
       var maybeAnswer4 =  document.getElementById("maybe4");
-      yesAnswer4.addEventListener("click", onButtonClickYes);
-      noAnswer4.addEventListener("click", onButtonClickNo);
-      maybeAnswer4.addEventListener("click", onButtonClickMaybe);
+      yesAnswer4.addEventListener("click", onQ4ButtonClick);
+      noAnswer4.addEventListener("click", onQ4ButtonClick);
+      maybeAnswer4.addEventListener("click", onQ4ButtonClick);
 
       var yesAnswer5 = document.getElementById("yes5");
       var noAnswer5 =  document.getElementById("no5");
       var maybeAnswer5 =  document.getElementById("maybe5");
-      yesAnswer5.addEventListener("click", onButtonClickYes);
-      noAnswer5.addEventListener("click", onButtonClickNo);
-      maybeAnswer5.addEventListener("click", onButtonClickMaybe);
+      yesAnswer5.addEventListener("click", onQ5ButtonClick);
+      noAnswer5.addEventListener("click", onQ5ButtonClick);
+      maybeAnswer5.addEventListener("click", onQ5ButtonClick);
     
       var yesAnswer6 = document.getElementById("yes6");
       var noAnswer6 =  document.getElementById("no6");
-      var maybeAnswer6=  document.getElementById("maybe6");
-      yesAnswer6.addEventListener("click", onButtonClickYes);
-      noAnswer6.addEventListener("click", onButtonClickNo);
+      yesAnswer6.addEventListener("click", onQ6ButtonClick);
+      noAnswer6.addEventListener("click", onQ6ButtonClick);
 
     </script>
   
