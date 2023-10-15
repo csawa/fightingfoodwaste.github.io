@@ -149,11 +149,11 @@
         this.style.opacity=0.6;
         
         if (this.id == "yes2"){
-          wasteTracker += 0;
+          wasteTracker += 1;
           noAnswer2.disabled = true;
           maybeAnswer2.disabled = true;
         } else if (this.id == "no2"){
-          wasteTracker += 1;
+          wasteTracker += 0;
           yesAnswer2.disabled = true;
           maybeAnswer2.disabled = true;
         } else if(this.id == "maybe2"){
@@ -254,11 +254,11 @@
         this.style.opacity=0.6;
         
         if (this.id == "yes7"){
-          wasteTracker += 0;
+          wasteTracker += 1;
           noAnswer7.disabled = true;
           maybeAnswer7.disabled = true;
         } else if (this.id == "no7"){
-          wasteTracker += 1;
+          wasteTracker += 0;
           yesAnswer7.disabled = true;
           maybeAnswer7.disabled = true;
         } else if(this.id == "maybe7"){
@@ -341,10 +341,14 @@
       yesAnswer8.addEventListener("click", onQ8ButtonClick);
       noAnswer8.addEventListener("click", onQ8ButtonClick);
 
-      /*const para = document.createElement("p");
-      if (wasteTracker >= 3){
+      const para = document.createElement("p");
+      if (wasteTracker >= 5){
         const node = document.createTextNode("Your waste level is high");
-      } else if (wasteTracker */
+      } else if (3 <= wasteTracker < 5){
+        const node2 = document.createTextNode("Your waste level is moderate);
+      } else if (3 < wasteTracker) {
+        const node3 = document.createTextNode("Your waste level is moderate);
+      }
 
     </script>
   
