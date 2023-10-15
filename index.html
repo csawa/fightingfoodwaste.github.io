@@ -124,6 +124,7 @@
     <input type="radio" id="personal" name="product" value="personal">
     <label for="personal">Use a personal/community composting service.</label><br>
 
+  <p id="foodWasteScore"> </p>
     <script>
       var wasteTracker = 0;
       var questionCounter = 0;
@@ -347,20 +348,11 @@
 
       
       if (wasteTracker >= 5){
-        const para = document.createElement("p");
-        const node = document.createTextNode("Your waste level is high");
-        para.appendChild(node);
-        console.log("test");
+        document.getElementById("foodWasteScore").innerHTML = "Your waste level is high";
       } else if (3 <= wasteTracker < 5){
-        const para = document.createElement("p");
-        const node2 = document.createTextNode("Your waste level is moderate");
-        para.appendChild(node2);
-        console.log("text");
+       document.getElementById("foodWasteScore").innerHTML = "Your waste level is moderate";
       } else if (3 < wasteTracker) {
-        const para = document.createElement("p");
-        const node3 = document.createTextNode("Your waste level is moderate");
-        para.appendChild(node3);
-        console.log("test");
+        document.getElementById("foodWasteScore").innerHTML = "Your waste level is low";
       }
 
     </script>
