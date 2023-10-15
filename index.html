@@ -114,7 +114,7 @@
     <button id="testButton">Test</button>
     <script>
        function onButtonClick(answerId) {
-          alert('Button clicked!');
+          alert('Button clicked!'+ answerId);
          console.log("test please work");
          answerId.style.backgroundColor="pink";
         }
@@ -125,12 +125,12 @@
       var yesAnswer1 = document.getElementById("yes1");
       var noAnswer1 =  document.getElementById("no1");
       var maybeAnswer1 =  document.getElementById("maybe1");
-      yesAnswer1.addEventListener("click", onButtonClick(yesAnswer1));
+      yesAnswer1.addEventListener("click", onButtonClick(test));
       noAnswer1.addEventListener("click", onButtonClick(noAnswer1));
       maybeAnswer1.addEventListener("click", onButtonClick(maybeAnswer1));
 
 
-      var yesAnswer2 = document.getElementById("yes2");
+      /*ar yesAnswer2 = document.getElementById("yes2");
       var noAnswer2 =  document.getElementById("no2");
       var maybeAnswer2 =  document.getElementById("maybe2");
       yesAnswer2.addEventListener("click", onButtonClick(yesAnswer2));
@@ -163,7 +163,7 @@
       var maybeAnswer6=  document.getElementById("maybe6");
       yesAnswer6.addEventListener("click", onButtonClick(yesAnswer6));
       noAnswer6.addEventListener("click", onButtonClick(noAnswer6));
-      maybeAnswer6.addEventListener("click", onButtonClick(maybeAnswer6));      
+      maybeAnswer6.addEventListener("click", onButtonClick(maybeAnswer6));      */
       
 
        /*const button = document.querySelector('button');
